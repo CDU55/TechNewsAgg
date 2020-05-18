@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="15dp"
+    app:cardBackgroundColor="#EDAE49">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/publicationLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp"></ImageView>
+
+        <TextView
+            android:id="@+id/publicationName"
+            android:layout_width="265dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/publicationLogo"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="The Indian Express"
+            android:textColor="#CC2936"
+            android:textSize="24sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/subscribedToPublication"
+            android:layout_width="265dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/publicationName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/publicationLogo"
+            android:gravity="center"
+            android:text="Subcribed"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    android:layout_marginTop="15dp"
+    app:cardBackgroundColor="#EDAE49">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/techPublicationLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp"></ImageView>
+
+        <TextView
+            android:id="@+id/articleAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/techPublicationLogo"
+            android:drawableLeft="@drawable/ic_publication_logo_mini"
+            android:drawablePadding="5dp"
+            android:text="Author"
+            android:textColor="#CC2936"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/articleAuthor"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/techPublicationLogo"
+            android:text="Title"
+            android:textColor="#A51D26"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

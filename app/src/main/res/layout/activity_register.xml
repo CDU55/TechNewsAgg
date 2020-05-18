@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/gradient_backgroud">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="264dp"
+        android:layout_height="174dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo_image"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_user_icon"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/usernameInput"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_password_icon"
+        android:drawablePadding="20dp"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gradient_button"
+        android:text="Register"
+        android:onClick="registerUser"/>
+
+</RelativeLayout>
